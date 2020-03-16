@@ -1,0 +1,109 @@
+@import "utility";
+@import "component-nav";
+@import "component-form";
+@import "component-social";
+;
+
+#section-profile, #section-training, #section-contact {
+    padding-bottom: 4em;
+
+    h2 {
+        margin-bottom: 3em;
+    }
+}
+
+#section-profile {
+    text-align: center;
+    background-color: $primary-color-light;
+
+    #profile-top{
+        margin-bottom: 2em;
+    }
+
+    .img-profile {
+        height: 8em;
+        width: 8em;
+        margin-bottom: 2em;
+        border-radius: 4em;
+        box-shadow: $shadow-light-big;
+    }
+    
+    .skill-icon {
+        margin: 0.8em 0.70em;
+        background-color: $neutral-color;
+        border-radius: 0.5em;
+        box-shadow: $shadow-neutral-small;        
+    }
+
+    .img-skill-icon {
+        display: block;
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 0.5em;
+    }
+
+    .img-skill-icon:hover {
+        box-shadow: $shadow-neutral-big; 
+        transition: box-shadow 0.15s ease-in-out;
+    }
+}
+
+#section-training {
+    background-image: linear-gradient(180deg, $primary-color-light, $neutral-color, $neutral-color);
+
+    .training-text-block {
+        margin-bottom: 1.5em;
+        text-align: center;
+
+        p {
+            margin: 0.35em;
+        }
+    }
+}
+
+#section-contact {
+    padding-bottom: 0;
+}
+
+
+#slide-img{
+    position: relative;
+    height: 5em;
+    width: 100%;
+    overflow: hidden;
+
+    #slide-img-left {
+        position: absolute;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 5em;
+        width: 100%;
+        // bottom: 0;
+        left: 0;
+        z-index: -1;
+        transform: skew(76deg);
+        border-right: 15em solid transparent;
+        border-bottom: 10em solid $primary-color-dark;
+    }
+
+    #slide-img-right {
+        position: absolute;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 5em;
+        width: 85%;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        transform: skew(-72deg);
+        border-left: 15em solid transparent;
+        border-bottom: 10em solid $secondary-color-dark;
+    }
+}
+
+
+// @media screen and (min-width: 700px){
+
+// }

@@ -1,0 +1,52 @@
+$input-border-normal:  0.1em solid $primary-color-light;
+$input-border-active:  0.15em solid $primary-color;
+
+form {
+    padding: 1em;
+    margin: 0 auto;
+
+    label {
+        margin-bottom: 1em;
+    }
+
+    input, textarea, input:-webkit-autofill, textarea:-webkit-autofill {
+        margin-bottom: 1em;
+        padding: 0.5em 1em;
+        border: $input-border-normal;
+        border-radius: 0.3em;
+        background-color: $secondary-color-light;
+        width: 100%;
+        color: $primary-color;
+        font-weight: $text-weight-bold;
+        cursor: pointer;
+        transition: border 0.5s, box-shadow 0.5s;
+    }
+
+    input:hover, textarea:hover {
+        border: $input-border-active;
+        box-shadow: $shadow-neutral-big;
+        outline: none;
+    }
+
+    input:focus, textarea:focus {
+        border: $input-border-active;
+        box-shadow: $shadow-neutral-big;
+        outline: none;
+    }
+    input[type=submit] {
+        background-color: $primary-color-light;
+        border: $input-border-normal;
+    }
+
+    input[type=submit]:hover {
+        background-color: $primary-color;
+        color: $neutral-color;
+        border: $input-border-active;
+    }
+
+    input[type=submit]:focus {
+        background-color: $primary-color;
+        color: $neutral-color;
+        border: $input-border-active;
+    }
+}
