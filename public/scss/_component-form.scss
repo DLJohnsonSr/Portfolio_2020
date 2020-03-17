@@ -1,19 +1,19 @@
-$input-border-normal:  0.1em solid $primary-color-light;
-$input-border-active:  0.15em solid $primary-color;
+$input-border-normal:  0.1rem solid $primary-color-light;
+$input-border-active:  0.15rem solid $primary-color;
 
 form {
-    padding: 1em;
+    padding: 1rem;
     margin: 0 auto;
 
-    label {
-        margin-bottom: 1em;
-    }
+    // label {
+    //     margin-bottom: 2rem;
+    // }
 
-    input, textarea, input:-webkit-autofill, textarea:-webkit-autofill {
-        margin-bottom: 1em;
-        padding: 0.5em 1em;
+    input, textarea {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
         border: $input-border-normal;
-        border-radius: 0.3em;
+        border-radius: 0.3rem;
         background-color: $secondary-color-light;
         width: 100%;
         color: $primary-color;

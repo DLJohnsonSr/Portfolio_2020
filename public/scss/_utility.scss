@@ -20,19 +20,26 @@ $text-font-size-small: 0.9em;
 $text-weight-bold: 600;
 $text-weight-normal: 400;
 
-$link-font:  Arial, Helvetica, sans-serif;
-$link-weight-bold: 700;
-$link-weight-normal: 400;
+$link-font-family: 'Times New Roman', Times, serif;
+$link-color: $neutral-color;
 
 // Shadow & layering effects - gobal
-$shadow-dark-big: 0.01em 0.05em 1em black;
-$shadow-neutral-big: 0.01em 0.01em 1em gray;
-$shadow-light-big: 0.01em 0.01em 1em white;
-$shadow-dark-small: 0.01em 0.05em 0.3em black;
-$shadow-neutral-small: 0.01em 0.01em 0.3em gray;
-$shadow-light-small: 0.01em 0.01em 0.3em white;
+$shadow-dark-big: 0.01rem 0.05rem 1rem black;
+$shadow-neutral-big: 0.01rem 0.01rem 1rem gray;
+$shadow-light-big: 0.01rem 0.01rem 1rem white;
+$shadow-dark-small: 0.01rem 0.05rem 0.3rem black;
+$shadow-neutral-small: 0.01rem 0.01rem 0.3rem gray;
+$shadow-light-small: 0.01rem 0.01rem 0.3rem white;
 
-$component-shadow: 0.01em 0.05em 1em rgb(75, 75, 75);
+// COMPONENT VARIABLES
+$component-shadow: 0.01rem 0.05rem 1rem rgb(75, 75, 75);
+
+//Component - nav
+$nav-link-color: $neutral-color;
+$nav-link-font-family:  Arial, Helvetica, sans-serif;
+$nav-link-font-size: 1.1em;
+$nav-link-weight-bold: 700;
+$nav-link-weight-normal: 400;
 
 // GLOBAL ATTRIBUTES
 * {
@@ -42,16 +49,16 @@ $component-shadow: 0.01em 0.05em 1em rgb(75, 75, 75);
 }
 body {
     margin: 0;
-    padding: 3.5em 0 0 0;
+    padding: 3.5rem 0 0 0;
     font-size: $default-font-size;
 }
 
 section {
-    padding: 1em;
+    padding: 1rem;
 }
 
 footer {
-    padding: 0.5em;
+    padding: 0.5rem;
     background-color: $primary-color-light;
     text-align: center;
     font-size: $text-font-size-small;
@@ -59,7 +66,7 @@ footer {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     display: block;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
     font-family: $heading-font;
     font-weight: $heading-weight;
 }
@@ -78,7 +85,7 @@ p {
 }
 
 a {
-    font-family: $link-font;
+    font-family: $link-font-family;
 }
 
 // LAYOUT

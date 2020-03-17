@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px){
+
+    body {
+        background: center no-repeat url(/public/img/federico_respini_1200x675.webp);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #section-profile {
+        // Photo by Federico Respini on Unsplash
+
+        height: 95vh;
+        padding: 2rem 1rem;
+
+        .section-border{
+            border: 0.15rem double $neutral-color;
+            width: 100%;
+            height: 97%;           
+        }
+
+        #profile-top{
+            display: inline-block;
+            width: 49%;
+            padding: 8rem 0 0 0;
+        }
+
+        #skill-icons{
+            width: 49%;
+            display: inline-block;
+        }
+
+        .skill-icon {
+            margin: 1.2rem 1.5rem;      
+        }
+    
+        .img-skill-icon {
+            display: block;
+            height: 5rem;
+            width: 5rem;
+            // border-radius: 0.5rem;
+        }
+
+        // .skill-icon:hover{
+        //     box-shadow: $shadow-neutral-big; 
+        //     transition: box-shadow 0.15s ease-in-out
+        // }
+        // .img-skill-icon:hover {
+        //     box-shadow: none; 
+        // }
+
+    }
+
+}
