@@ -1,0 +1,71 @@
+@media only screen and (min-width: 1200px){
+
+    body {
+        // Photo by Federico Respini on Unsplash
+        background: center no-repeat url(/public/img/backgrounds/federico_respini_5923x3332.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 20px;
+    }
+
+    .card-right {
+        padding-top: 84vh;
+    }
+
+    #section-profile{
+        top: 9%;
+    }
+
+    #section-training {
+        padding-top: 8rem;
+    }
+
+    #section-contact {
+        padding-top: 8rem;
+        padding-bottom: 22rem;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    
+    body {
+        font-size: 28px;
+    }
+
+    #section-profile{
+        // top: 15%;
+
+        .img-profile {
+            height: 12rem;
+            width: 12rem;
+            margin: 4rem;
+            border-radius: 6rem;
+            box-shadow: $shadow-light-big;
+        }
+    }
+
+    #skill-icons{
+        margin-top: 4rem;
+        max-width: 35rem;
+
+        .skill-icon {
+            margin: 1.5rem 1.5rem;
+        }
+    
+        .img-skill-icon {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    #section-training {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    #section-training {
+        padding-top: 11rem;
+    }
+}

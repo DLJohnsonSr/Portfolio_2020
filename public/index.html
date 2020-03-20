@@ -13,14 +13,24 @@
 	<link rel="preconnect stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
+
+	<!-- Body overlay & border  -->
+	<div class="body-overlay">
+		<div class="border"></div>
+	</div>
+
+
 	<!-- start navigation -->
 	<nav id="navbar">
-		<div id="nav-menu-icon">
-			<div class="nav-menu-hash"></div>
-			<div class="nav-menu-hash"></div>
-			<div class="nav-menu-hash"></div>
+		<div id="navbar-menu">
+			<div id="navbar-icon">
+				<div class="burger"></div>
+				<div class="burger"></div>
+				<div class="burger"></div>
+			</div>
+			<img src="/public/img/skill-icons/javascript.webp" alt="Brand Logo" class="img-brand">
 		</div>
-		<ul id="nav-menu-list">
+		<ul id="navbar-list" class="menu-display">
 			<li><a href="#section-profile" class="nav-link">Home</a></li>
 			<li><a href="#section-training" class="nav-link">Training</a></li>
 			<li><a href="#section-contact" class="nav-link">Contact</a></li>
@@ -30,97 +40,109 @@
 	</nav>
 	<!-- end navigation -->
 
-	<!-- start content flex-container -->
-	<div class="flex-container">
 
-		<!-- start profile section -->
-		<section id="section-profile">
-			<div class="section-border">
-				<div id="profile-top">
+	<div id="content-container">
+
+		<!-- start profile card -->
+		<div class="card-left">
+			<div class="center-card">
+				<section id="section-profile">
 					<h1>Dominique L. Johnson, Sr.</h1>
 					<img class="img-profile" src="img/dljsr.webp" alt="Dominique L. Johnson, Sr.">
 					<span class="h4">Full-Stack Web Developer</span>
-				</div>
-				<div id="skill-icons">
-					<div class="flex-container">
+					<div id="skill-icons">
 						<div class="skill-icon">
 							<!-- Icons made Pixel Buddha https://www.flaticon.com/authors/pixel-buddha" -->
-							<img class="img-skill-icon" src="img/html5.svg" alt="HTML5 Logo">
+							<img class="img-skill-icon" src="img/skill-icons/html5.svg" alt="HTML5 Logo">
 						</div>
 						<div class="skill-icon">
 							<!-- <div>Icons made by Pixel perfect "https://www.flaticon.com/authors/pixel-perfect" -->
-							<img class="img-skill-icon" src="img/css3.svg" alt="CSS3 Logo">
+							<img class="img-skill-icon" src="img/skill-icons/css3.svg" alt="CSS3 Logo">
 						</div>
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/javascript.webp" alt="JavaScript Logo">
+							<img class="img-skill-icon" src="img/skill-icons/javascript.webp" alt="JavaScript Logo">
 						</div>
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/react.webp" alt="React Logo">
+							<img class="img-skill-icon" src="img/skill-icons/react.webp" alt="React Logo">
 							<!-- <div>Icons made by Freepik "https://www.flaticon.com/authors/freepik" -->
 						</div>
-					</div>
-					<div class="flex-container">
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/java.svg" alt="Java Logo">
+							<img class="img-skill-icon" src="img/skill-icons/java.svg" alt="Java Logo">
 						</div>
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/spring.webp" alt="Java Spring Boot + Mavan Logo">
+							<img class="img-skill-icon" src="img/skill-icons/spring.webp" alt="Java Spring Boot + Mavan Logo">
 						</div>
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/thymeleaf.webp" alt="Thymeleaf Logo">
+							<img class="img-skill-icon" src="img/skill-icons/thymeleaf.webp" alt="Thymeleaf Logo">
 						</div>
 						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/bootstrap.svg" alt="Bootstrap Logo">
+							<img class="img-skill-icon" src="img/skill-icons/bootstrap.svg" alt="Bootstrap Logo">
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
-		</section>
+		</div>
 		<!-- end profile card -->
 
-
-		<!-- start training section -->
-		<section id="section-training">
-			<div id="training">
+		
+		<!--start content card -->
+		<div class="card-right">
+			<!-- start training section -->
+			<section id="section-training">
 				<h2>Training</h2>
 				<div class="training-text-block">
-					<p class="h5">CodeWork Academy Java Bootcamp</p>
-					<p>Full-Stack Java Web Development</p>
-					<p>June 2018</p>
+					<div class="h5">CodeWork Academy Java Bootcamp</div>
+					<div>Full-Stack Java Web Development</div>
+					<div>June 2018</div>
 				</div>
 				<div class="training-text-block">
-					<p class="h5">University of Maryland, UC</p>
-					<p>Masters of Science - Project Management</p>
-					<p>May 2011</p>
+					<div class="h5">University of Maryland, UC</div>
+					<div>Masters of Science - Project Management</div>
+					<pdiv>May 2011</pdiv>
 				</div>
 				<div class="training-text-block">
-					<p class="h5">Howard University</p>
-					<p>Bachelors of Arts - Social Sciences</p>
-					<p>May 2003</p>
+					<div class="h5">Howard University</div>
+					<div>Bachelors of Arts - Social Sciences</div>
+					<pdiv>May 2003</pdiv>
 				</div>
-			</div>
-		</section>
-		<!-- end training section -->
+			</section>
+			<!-- end training section -->
 
 
-		<!-- start contact section -->
-		<section id="section-contact">
-			<h2>Contact Me</h2>
-			<form action="" id="form-contact">
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name" placeholder="Johnnie Ann Doe?" required>
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email" placeholder="you@somewhere.com" required>
-				<label for="message">Message:</label>
-				<textarea name="message" id="message" placeholder="Talk to me..." required></textarea>
-				<input type="submit" value="Submit">
-			</form>
+			<!-- start contact section -->
+			<section id="section-contact">
+				<h2>Contact Me</h2>
+				<form action="" id="form-contact">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" placeholder="Johnnie Ann Doe?" required>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="you@somewhere.com" required>
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" placeholder="Talk to me..." required></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</section>
+			<!-- end contact section -->
+		</div>
+		<!-- end content card -->
 
-		</section>
-		<!-- end contact section -->
-		
 	</div>
-	<!-- end content flex-container -->
+
+
+	<!-- start social section -->
+	<div id="social" class="social-position">
+		<a href="https://www.youtube.com/channel/UC49dxdjEOx80LBNBU9fYbvw" target="_blank">
+			<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+			<img class="img-social" src="img/social-icons/youtube.svg" alt="YouTube.com Logo">
+		</a>
+		<a href="https://github.com/DLJohnsonSr" target="_blank">
+			<img class="img-social" src="img/social-icons/github.svg" alt="Github.com Logo">
+		</a>
+		<a href="https://codepen.io/DLJohnsonSr/#" target="_blank">
+			<img class="img-social" src="img/social-icons/codepen.svg" alt="Codepen.io Logo">
+		</a>
+	</div>
+	<!-- end social section -->
 
 
 	<!-- start footer -->
@@ -129,27 +151,11 @@
 	</footer>
 	<!-- end footer -->
 
-	
-	<!-- start social section -->
-	<div id="social">
-		<a href="https://www.youtube.com/channel/UC49dxdjEOx80LBNBU9fYbvw" target="_blank">
-			<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-			<img class="img-social" src="img/youtube.svg" alt="YouTube.com Logo">
-		</a>
-		<a href="https://github.com/DLJohnsonSr" target="_blank">
-			<img class="img-social" src="img/github.svg" alt="Github.com Logo">
-		</a>
-		<a href="https://codepen.io/DLJohnsonSr/#" target="_blank">
-			<img class="img-social" src="img/codepen.svg" alt="Codepen.io Logo">
-		</a>
-	</div>
-	<!-- end social section -->
-
 
 	<!-- SCRIPTS -->
 	<script src="js/components.js"></script>
 	<script src="js/main.js"></script>
 
 
-  </body>
+</body>
 </html>

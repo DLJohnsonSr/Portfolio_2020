@@ -1,52 +1,49 @@
-$input-border-normal:  0.1rem solid $primary-color-light;
-$input-border-active:  0.15rem solid $primary-color;
+$input-border-light:  0.1rem solid $color-primary-normal;
+$input-border-dark:  0.15rem solid $color-primary-dark;
 
 form {
     padding: 1rem;
     margin: 0 auto;
 
-    // label {
-    //     margin-bottom: 2rem;
-    // }
-
     input, textarea {
         margin: 1rem 0;
         padding: 0.5rem 1rem;
-        border: $input-border-normal;
+        border: $input-border-dark;
         border-radius: 0.3rem;
-        background-color: $secondary-color-light;
+        background-color: $color-secondary-light;
         width: 100%;
-        color: $primary-color;
+        color: $color-secondary-dark;
         font-weight: $text-weight-bold;
         cursor: pointer;
         transition: border 0.5s, box-shadow 0.5s;
     }
 
     input:hover, textarea:hover {
-        border: $input-border-active;
+        border: $input-border-light;
         box-shadow: $shadow-neutral-big;
         outline: none;
     }
 
     input:focus, textarea:focus {
-        border: $input-border-active;
+        border: $input-border-light;
         box-shadow: $shadow-neutral-big;
         outline: none;
     }
     input[type=submit] {
-        background-color: $primary-color-light;
-        border: $input-border-normal;
+        background-color: $color-primary-dark;
+        color: $color-primary-normal;
+        border: $input-border-light;
     }
 
     input[type=submit]:hover {
-        background-color: $primary-color;
-        color: $neutral-color;
-        border: $input-border-active;
+        background-color: $color-primary-light;
+        color: $color-primary-dark;
+        border: $input-border-dark;
     }
 
     input[type=submit]:focus {
-        background-color: $primary-color;
-        color: $neutral-color;
-        border: $input-border-active;
+        background-color: $color-primary-light;
+        color: $color-primary-dark;
+        border: $input-border-dark;
     }
 }

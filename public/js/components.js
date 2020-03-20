@@ -2,18 +2,19 @@
 
 const body = document.body;
 
-
-
-// dropdown menu
-const navMenuIcon = document.getElementById("nav-menu-icon");
-const navList = document.getElementById("nav-menu-list");
+// NAVBAR
+const navbarMenu = document.getElementById("navbar-menu");
+const navbarList = document.getElementById("navbar-list");
+const navbarIcon = document.getElementById("navbar-icon");
 
 // toggle menu list open or closed on navbar
-navMenuIcon.addEventListener("click", ()=>{
-    navList.classList.toggle("menu-display");
+navbarMenu.addEventListener("click", ()=>{
+    navbarList.classList.toggle("menu-display");
+    navbarIcon.classList.toggle("icon-spin");
 });
 
 // close menu list when menu link clicked
-// navList.addEventListener("click", ()=>{
-//     navList.classList.remove("menu-display");
-// });
+navbarList.addEventListener("click", ()=>{
+    navbarList.classList.toggle("menu-display");
+    navbarIcon.classList.toggle("icon-spin");
+});
