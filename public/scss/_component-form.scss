@@ -18,6 +18,10 @@ form {
         transition: border 0.5s, box-shadow 0.5s;
     }
 
+    textarea {
+        height: 6rem;
+    }
+
     input:hover, textarea:hover {
         border: $input-border-light;
         box-shadow: $shadow-neutral-big;
@@ -45,5 +49,16 @@ form {
         background-color: $color-primary-light;
         color: $color-primary-dark;
         border: $input-border-dark;
+    }
+
+    .form-message {
+        text-align: center;
+        margin: 1rem auto 1rem auto;
+        padding: 0.4rem;
+        border-radius: 0.3rem;
+        // border: 0.1rem solid $color-primary-dark;
+        // background-color: $color-neutral-normal;
+        color: $color-secondary-light;
+        font-weight: $text-weight-bold;
     }
 }
