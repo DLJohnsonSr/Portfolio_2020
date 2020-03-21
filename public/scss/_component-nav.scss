@@ -88,6 +88,9 @@ nav {
     nav{
         display: flex;
         justify-content: center;
+        // background-color: #394b6d;
+        background-image: linear-gradient(to bottom right, #394b6d, #3d4d6b, #4d5e79);
+        height: 3.5rem;
 
         #navbar-menu {
             display: none;
