@@ -11,6 +11,21 @@
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="preconnect stylesheet" href="css/styles.css" type="text/css">
+
+	<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+	<script>
+		window.onload = function() {
+    
+		lax.setup({ breakpoints: { mobile: 0, desktop: 1024 } }); // init
+
+		const updateLax = () => {
+			lax.update(window.scrollY);
+			window.requestAnimationFrame(updateLax);
+		};
+
+		window.requestAnimationFrame(updateLax);
+	};
+	</script>
 </head>
 <body>
 
@@ -88,7 +103,7 @@
 		<!--start content card -->
 		<div class="card-right">
 			<!-- start training section -->
-			<section id="section-training">
+			<section id="section-training" class="lax" data-lax-opacity_desktop="400 0, 600 1">
 				<h2>Training</h2>
 				<div class="training-text-block">
 					<div class="h5">CodeWork Academy Java Bootcamp</div>
@@ -110,13 +125,17 @@
 
 
 			<!-- start contact section -->
-			<section id="section-contact">
+			<section id="section-contact" class="lax" data-lax-opacity_desktop="1100 0, 1275 1">
 				<h2>Contact Me</h2>
 				<form action="" id="form-contact">
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="name" placeholder="Johnnie Ann Doe?" required>
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="email" placeholder="you@somewhere.com" required>
+					<div class="input-group">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" placeholder="Johnnie Ann Doe?" required>
+					</div>
+					<div class="input-group">
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder="you@somewhere.com" required>
+					</div>
 					<label for="message">Message:</label>
 					<textarea name="message" id="message" placeholder="Talk to me..." required></textarea>
 					<input type="submit" value="Submit">
@@ -151,6 +170,15 @@
 	</footer>
 	<!-- end footer -->
 
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<!-- <script src="/__/firebase/7.12.0/firebase-app.js"></script> -->
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<!-- Initialize Firebase -->
+	<!-- <script src="/__/firebase/init.js"></script> -->
 
 	<!-- SCRIPTS -->
 	<script src="js/components.js"></script>

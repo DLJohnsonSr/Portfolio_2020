@@ -5,20 +5,28 @@ form {
     padding: 1rem;
     margin: 0 auto;
 
+    label {
+        display: block;
+    }
+
     input, textarea {
         margin: 1rem 0;
         padding: 0.5rem 1rem;
         border: $input-border-dark;
         border-radius: 0.3rem;
         background-color: $color-secondary-light;
-        width: 100%;
         color: $color-secondary-dark;
         font-weight: $text-weight-bold;
         cursor: pointer;
         transition: border 0.5s, box-shadow 0.5s;
     }
 
+    input[type=text], input[type=email] {
+        width: 100%;
+    }
+
     textarea {
+        width: 100%;
         height: 6rem;
     }
 
@@ -37,6 +45,7 @@ form {
         background-color: $color-primary-dark;
         color: $color-primary-normal;
         border: $input-border-light;
+        width: 100%;
     }
 
     input[type=submit]:hover {
@@ -61,4 +70,23 @@ form {
         color: $color-secondary-light;
         font-weight: $text-weight-bold;
     }
+}
+
+@media only screen and (min-width: 1024px){
+
+    form {
+
+        .input-group {
+            display: inline-block;
+            width: 49.5%;
+        }
+
+        input[type=text], input[type=email] {
+            width: 100%;
+        }
+
+    }
+
+
+
 }

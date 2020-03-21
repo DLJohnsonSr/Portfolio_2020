@@ -2,7 +2,7 @@
 
     body {
         // Photo by Federico Respini on Unsplash
-        background: center no-repeat url(/public/img/backgrounds/federico_respini_1200x675.webp);
+        background: center no-repeat url(../img/backgrounds/federico_respini_1200x675.webp);
         background-attachment: fixed;
         background-size: cover;
     }
@@ -16,12 +16,6 @@
 
     footer {
         background-color: transparent;
-    }
-
-    .border {
-        position: relative;
-        border: 0.15rem double $color-secondary-light;
-        height: 99%;
     }
 
     #section-profile {
@@ -47,6 +41,12 @@
 }
 
 @media only screen and (min-width: 1024px){
+
+    .border {
+        position: relative;
+        border: 0.15rem double $color-secondary-light;
+        height: 99%;
+    }
 
     #content-container {
         display: flex;

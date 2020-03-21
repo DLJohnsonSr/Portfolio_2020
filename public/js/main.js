@@ -1,4 +1,3 @@
-
 const contactForm = document.getElementById("form-contact");
 
 // email form

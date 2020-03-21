@@ -34,7 +34,7 @@ body {
     font-family: $text-font-family;
     color: $color-primary-light;
     // Photo by Federico Respini on Unsplash
-    background: center no-repeat url(/public/img/backgrounds/federico_respini_395x675.webp);
+    background: center no-repeat url(../img/backgrounds/federico_respini_395x675.webp);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -143,7 +143,7 @@ footer {
     
     body {
         // Photo by Federico Respini on Unsplash
-        background: center no-repeat url(/public/img/backgrounds/federico_respini_700x675.webp);
+        background: center no-repeat url(../img/backgrounds/federico_respini_700x675.webp);
         background-attachment: fixed;
         background-size: cover;
     }

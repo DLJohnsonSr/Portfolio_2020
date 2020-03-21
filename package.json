@@ -13,6 +13,8 @@
     "eslint": "^6.8.0"
   },
   "dependencies": {
+    "lax": "0.0.40",
+    "lax.js": "^1.2.5",
     "nodemailer": "^6.4.6"
   }
 }
