@@ -1,108 +1,105 @@
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 800px) {
+  body {
+    // Photo by Federico Respini on Unsplash
+    background: center no-repeat
+      url(../img/backgrounds/federico_respini_1200x675.webp);
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
-    body {
-        // Photo by Federico Respini on Unsplash
-        background: center no-repeat url(../img/backgrounds/federico_respini_1200x675.webp);
-        background-attachment: fixed;
-        background-size: cover;
+  nav {
+    #navbar-list {
+      background-color: transparent;
+    }
+  }
+
+  footer {
+    background-color: transparent;
+  }
+
+  #section-profile {
+    #profile-top {
+      margin-bottom: 3rem;
+    }
+  }
+
+  #skill-icons {
+    max-width: 25rem;
+
+    .skill-icon {
+      margin: 1.25rem 1.25rem;
     }
 
-    nav{
-
-        #navbar-list {
-            background-color: transparent;
-        }
+    .img-skill-icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      border-radius: 0.8rem;
     }
-
-    footer {
-        background-color: transparent;
-    }
-
-    #section-profile {
-
-        #profile-top{
-            margin-bottom: 3rem;
-        }
-    }
-        
-    #skill-icons{
-        max-width: 25rem;
-
-        .skill-icon {
-            margin: 1.25rem 1.25rem;
-        }
-    
-        .img-skill-icon {
-            height: 3.5rem;
-            width: 3.5rem;
-            border-radius: 0.8rem;
-        }
-    }
+  }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
+  .body-overlay {
+    min-height: 672px;
+  }
 
-    .body-overlay {
-        min-height: 672px;
+  .border {
+    position: relative;
+    border: 0.15rem double $color-light;
+    height: 99%;
+  }
+
+  #content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .card-left {
+    width: 50%;
+  }
+
+  .card-right {
+    width: 50%;
+    padding-top: 78vh;
+  }
+
+  .center-card {
+    position: relative;
+    top: 0;
+  }
+
+  #section-profile {
+    position: fixed;
+    left: 5%;
+  }
+
+  #section-training {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+
+    h2 {
+      margin-bottom: 6rem;
     }
+  }
 
-    .border {
-        position: relative;
-        border: 0.15rem double $color-secondary-light;
-        height: 99%;
+  #section-contact {
+    padding-top: 7rem;
+    padding-bottom: 11rem;
+
+    h2 {
+      margin-bottom: 6rem;
     }
+  }
 
-    #content-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 100vw;
-        justify-content: center;
-    }
-
-    .card-left {
-        width: 50%;
-    }
-
-    .card-right {
-        width: 50%;
-        padding-top: 78vh;
-    }
-
-    .center-card {
-        position: relative;
-        top: 0;
-    }
-
-    #section-profile {
-        position: fixed;
-        left: 5%;
-    }
-    
-    #section-training {
-        padding-top: 7rem;
-        padding-bottom: 4rem;
-
-        h2 {
-            margin-bottom: 6rem;
-        }
-    }
-
-    #section-contact {
-        padding-top: 7rem;
-        padding-bottom: 11rem;
-
-        h2 {
-            margin-bottom: 6rem;
-        }
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin: 0;
-        padding-bottom: 0.8rem;
-        background-color: transparent;
-    }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.8rem;
+    background-color: transparent;
+  }
 }

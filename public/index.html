@@ -1,188 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Dominique Johnson">
-	<meta name="description" content="This is a profolio page with design front- and back-end examples of software engineer, Dominique L. Johnson, Sr.">
-	<meta name="theme-color" content="#0000FF"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dominique Johnson" />
+    <meta
+      name="description"
+      content="This is a profolio page with design front- and back-end examples of software engineer, Dominique L. Johnson, Sr."
+    />
+    <meta name="theme-color" content="#0000FF" />
 
-	<title>Dominique L. Johnson, Sr. Design Portfolio</title>
+    <title>Dominique L. Johnson, Sr. Design Portfolio</title>
 
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="preconnect stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect stylesheet" href="css/styles.css" type="text/css" />
 
-	<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-	<script>
-		window.onload = function() {
-    
-		lax.setup({ breakpoints: { mobile: 0, desktop: 1024 } }); // init
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+      window.onload = function () {
+        lax.setup({ breakpoints: { mobile: 0, desktop: 1024 } }); // init
 
-		const updateLax = () => {
-			lax.update(window.scrollY);
-			window.requestAnimationFrame(updateLax);
-		};
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
 
-		window.requestAnimationFrame(updateLax);
-	};
-	</script>
-</head>
-<body>
+        window.requestAnimationFrame(updateLax);
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Body overlay & border  -->
+    <div class="body-overlay">
+      <div class="border"></div>
+    </div>
 
-	<!-- Body overlay & border  -->
-	<div class="body-overlay">
-		<div class="border"></div>
-	</div>
+    <!-- start navigation -->
+    <div id="navbar"></div>
 
+    <!-- end navigation -->
 
-	<!-- start navigation -->
-	<nav id="navbar">
-		<div id="navbar-menu">
-			<div id="navbar-icon">
-				<div class="burger"></div>
-				<div class="burger"></div>
-				<div class="burger"></div>
-			</div>
-			<img src="/public/img/skill-icons/javascript.webp" alt="Brand Logo" class="img-brand">
-		</div>
-		<ul id="navbar-list" class="menu-display">
-			<li><a href="#section-profile" class="nav-link">Home</a></li>
-			<li><a href="#section-training" class="nav-link">Training</a></li>
-			<li><a href="#section-contact" class="nav-link">Contact</a></li>
-			<li><a href="/" class="nav-link">Blog</a></li>
-			<li><a href="/" class="nav-link">Resources</a></li>			
-		</ul>
-	</nav>
-	<!-- end navigation -->
+    <div id="content-container">
+      <!-- start profile card -->
+      <div class="card-left">
+        <div class="center-card">
+          <section id="section-profile">
+            <h1>Dominique L. Johnson, Sr.</h1>
+            <img
+              class="img-profile"
+              src="img/dljsr.webp"
+              alt="Dominique L. Johnson, Sr."
+            />
+            <span class="h4">Full-Stack Web Developer</span>
 
+            <!-- VUE SKILLS COMPONENT -->
+            <div id="skills"></div>
+          </section>
+        </div>
+      </div>
+      <!-- end profile card -->
 
-	<div id="content-container">
+      <!--start content card -->
+      <div class="card-right">
+        <!-- start training section -->
+        <section
+          id="section-training"
+          class="lax"
+          data-lax-opacity_desktop="400 0, 600 1"
+        >
+          <h2>Training</h2>
+          <div class="training-text-block">
+            <div class="h5">CodeWork Academy Java Bootcamp</div>
+            <div>Full-Stack Java Web Development</div>
+            <div>June 2018</div>
+          </div>
+          <div class="training-text-block">
+            <div class="h5">University of Maryland, UC</div>
+            <div>Masters of Science - Project Management</div>
+            <pdiv>May 2011</pdiv>
+          </div>
+          <div class="training-text-block">
+            <div class="h5">Howard University</div>
+            <div>Bachelors of Arts - Social Sciences</div>
+            <pdiv>May 2003</pdiv>
+          </div>
+        </section>
+        <!-- end training section -->
 
-		<!-- start profile card -->
-		<div class="card-left">
-			<div class="center-card">
-				<section id="section-profile">
-					<h1>Dominique L. Johnson, Sr.</h1>
-					<img class="img-profile" src="img/dljsr.webp" alt="Dominique L. Johnson, Sr.">
-					<span class="h4">Full-Stack Web Developer</span>
-					<div id="skill-icons">
-						<div class="skill-icon">
-							<!-- Icons made Pixel Buddha https://www.flaticon.com/authors/pixel-buddha" -->
-							<img class="img-skill-icon" src="img/skill-icons/html5.svg" alt="HTML5 Logo">
-						</div>
-						<div class="skill-icon">
-							<!-- <div>Icons made by Pixel perfect "https://www.flaticon.com/authors/pixel-perfect" -->
-							<img class="img-skill-icon" src="img/skill-icons/css3.svg" alt="CSS3 Logo">
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/javascript.webp" alt="JavaScript Logo">
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/react.webp" alt="React Logo">
-							<!-- <div>Icons made by Freepik "https://www.flaticon.com/authors/freepik" -->
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/java.svg" alt="Java Logo">
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/spring.webp" alt="Java Spring Boot + Mavan Logo">
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/thymeleaf.webp" alt="Thymeleaf Logo">
-						</div>
-						<div class="skill-icon">
-							<img class="img-skill-icon" src="img/skill-icons/bootstrap.svg" alt="Bootstrap Logo">
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		<!-- end profile card -->
+        <!-- start contact section -->
+        <section
+          id="section-contact"
+          class="lax"
+          data-lax-opacity_desktop="1100 0, 1275 1"
+        >
+          <h2>Contact Me</h2>
+          <form action="" id="form-contact">
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Johnnie Ann Doe?"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@somewhere.com"
+                required
+              />
+            </div>
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Talk to me..."
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+        <!-- end contact section -->
+      </div>
+      <!-- end content card -->
+    </div>
 
-		
-		<!--start content card -->
-		<div class="card-right">
-			<!-- start training section -->
-			<section id="section-training" class="lax" data-lax-opacity_desktop="400 0, 600 1">
-				<h2>Training</h2>
-				<div class="training-text-block">
-					<div class="h5">CodeWork Academy Java Bootcamp</div>
-					<div>Full-Stack Java Web Development</div>
-					<div>June 2018</div>
-				</div>
-				<div class="training-text-block">
-					<div class="h5">University of Maryland, UC</div>
-					<div>Masters of Science - Project Management</div>
-					<pdiv>May 2011</pdiv>
-				</div>
-				<div class="training-text-block">
-					<div class="h5">Howard University</div>
-					<div>Bachelors of Arts - Social Sciences</div>
-					<pdiv>May 2003</pdiv>
-				</div>
-			</section>
-			<!-- end training section -->
+    <!-- start social section -->
+    <div id="social" class="social-position">
+      <a
+        href="https://www.youtube.com/channel/UC49dxdjEOx80LBNBU9fYbvw"
+        target="_blank"
+      >
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        <img
+          class="img-social"
+          src="img/social-icons/youtube.svg"
+          alt="YouTube.com Logo"
+        />
+      </a>
+      <a href="https://github.com/DLJohnsonSr" target="_blank">
+        <img
+          class="img-social"
+          src="img/social-icons/github.svg"
+          alt="Github.com Logo"
+        />
+      </a>
+      <a href="https://codepen.io/DLJohnsonSr/#" target="_blank">
+        <img
+          class="img-social"
+          src="img/social-icons/codepen.svg"
+          alt="Codepen.io Logo"
+        />
+      </a>
+    </div>
+    <!-- end social section -->
 
+    <!-- start footer -->
+    <footer id="footer">
+      <p>&copy; 2019 - 2020 All Rights Reserved</p>
+    </footer>
+    <!-- end footer -->
 
-			<!-- start contact section -->
-			<section id="section-contact" class="lax" data-lax-opacity_desktop="1100 0, 1275 1">
-				<h2>Contact Me</h2>
-				<form action="" id="form-contact">
-					<div class="input-group">
-						<label for="name">Name:</label>
-						<input type="text" name="name" id="name" placeholder="Johnnie Ann Doe?" required>
-					</div>
-					<div class="input-group">
-						<label for="email">Email:</label>
-						<input type="email" name="email" id="email" placeholder="you@somewhere.com" required>
-					</div>
-					<label for="message">Message:</label>
-					<textarea name="message" id="message" placeholder="Talk to me..." required></textarea>
-					<input type="submit" value="Submit">
-				</form>
-			</section>
-			<!-- end contact section -->
-		</div>
-		<!-- end content card -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="/__/firebase/7.12.0/firebase-app.js"></script> -->
 
-	</div>
-
-
-	<!-- start social section -->
-	<div id="social" class="social-position">
-		<a href="https://www.youtube.com/channel/UC49dxdjEOx80LBNBU9fYbvw" target="_blank">
-			<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-			<img class="img-social" src="img/social-icons/youtube.svg" alt="YouTube.com Logo">
-		</a>
-		<a href="https://github.com/DLJohnsonSr" target="_blank">
-			<img class="img-social" src="img/social-icons/github.svg" alt="Github.com Logo">
-		</a>
-		<a href="https://codepen.io/DLJohnsonSr/#" target="_blank">
-			<img class="img-social" src="img/social-icons/codepen.svg" alt="Codepen.io Logo">
-		</a>
-	</div>
-	<!-- end social section -->
-
-
-	<!-- start footer -->
-	<footer id="footer">
-		<p>&copy; 2019 - 2020 All Rights Reserved</p>
-	</footer>
-	<!-- end footer -->
-
-
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<!-- <script src="/__/firebase/7.12.0/firebase-app.js"></script> -->
-
-	<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
 		https://firebase.google.com/docs/web/setup#available-libraries -->
 
-	<!-- Initialize Firebase -->
-	<!-- <script src="/__/firebase/init.js"></script> -->
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
 
-	<!-- SCRIPTS -->
-	<script src="js/components.js"></script>
-	<script src="js/main.js"></script>
+    <!-- Vue Development CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-</body>
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/vueNavbar.js"></script>
+    <script src="js/vueSkills.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -2,69 +2,40 @@
 // _component-nav: nav = 5
 // _component-social: #social = 4
 
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Calistoga&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Calistoga&display=swap");
 
 // VARIABLES
 
 // Color
-$color-primary-dark: #231800;
-$color-primary-dark-75: rgba(35, 24, 0, 0.75);
-$color-primary-dark-50: rgba(35, 24, 0, 0.5);
-$color-primary-dark-25: rgba(35, 24, 0, 0.25);
-$color-primary-normal: #aa893a;
-$color-primary-normal-75: rgba(170, 137, 58, 0.75);
-$color-primary-normal-50: rgba(170, 137, 58, 0.5);
-$color-primary-normal-25: rgba(170, 137, 58, 0.25);
-$color-primary-light: #edd293;
-$color-primary-light-75: rgba(237, 210, 147, 0.75);
-$color-primary-light-50: rgba(237, 210, 147, 0.5);
-$color-primary-light-25: rgba(237, 210, 147, 0.25);
-$color-secondary-dark: #010518;
-$color-secondary-dark-75: rgba(1, 5, 24, 0.75);
-$color-secondary-dark-50: rgba(1, 5, 24, 0.5);
-$color-secondary-dark-25: rgba(1, 5, 24, 0.25);
-$color-secondary-normal: #313e74;
-$color-secondary-normal-75: rgba(49, 62, 116, 0.75);
-$color-secondary-normal-50: rgba(49, 62, 116, 0.5);
-$color-secondary-normal-25: rgba(49, 62, 116, 0.25);
-$color-secondary-light: #cacede;
-$color-secondary-75: rgba(202, 206, 222, 0.75);
-$color-secondary-50: rgba(202, 206, 222, 0.5);
-$color-secondary-25: rgba(202, 206, 222, 0.25);
-$color-neutral-normal: #fff7e5;
+$color-primary: #aa893a;
+$color-secondary: #231800;
+$color-accent: #edd293;
+$color-dark: black;
+$color-light: white;
 
 // Font
 $default-font-size: 18px;
 
-$heading-font: 'Calistoga', cursive;
-// $heading-font: Georgia, 'Times New Roman', Times, serif;
+$heading-font: "Calistoga", cursive, Georgia, "Times New Roman", Times, serif;
 $heading-weight: 700;
 
-$text-font-family: 'Times New Roman', Times, serif;
+$text-font-family: "Times New Roman", Times, serif;
 $text-font-size-small: 0.9em;
 $text-weight-bold: 600;
 $text-weight-normal: 400;
 
-$link-font-family: 'Times New Roman', Times, serif;
-$link-color: $color-neutral-normal;
+$link-font-family: "Times New Roman", Times, serif;
+$link-color: $color-accent;
 
 // Shadow & layering effects - gobal
-$shadow-dark-big: 0.01rem 0.05rem 1rem black;
-$shadow-neutral-big: 0.01rem 0.01rem 1rem gray;
-$shadow-light-big: 0.01rem 0.01rem 1rem white;
-$shadow-dark-small: 0.01rem 0.05rem 0.3rem black;
-$shadow-neutral-small: 0.01rem 0.01rem 0.3rem gray;
-$shadow-light-small: 0.01rem 0.01rem 0.3rem white;
-$shadow-light-outline: 0.05rem 0.05rem 0.1rem $color-neutral-normal;
+$shadow: 0.05rem 0.05rem 0.1rem $color-accent;
 
 // COMPONENT VARIABLES
 $component-shadow: 0.01rem 0.05rem 1rem rgb(75, 75, 75);
 
 //Component - nav
-$nav-link-color: $color-neutral-normal;
+$nav-link-color: $color-accent;
 // $nav-link-font-family: Arial, Helvetica, sans-serif;
-$nav-link-font-family: 'Amatic SC', cursive;
+$nav-link-font-family: "Amatic SC", cursive;
 $nav-link-font-size: 1.5em;
-$nav-link-weight-bold: 700;
-$nav-link-weight-normal: 400;
-
+$nav-link-font-weight: 700;
